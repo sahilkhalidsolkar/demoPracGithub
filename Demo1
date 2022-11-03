@@ -1,0 +1,38 @@
+
+//while pushing to the origin you need to generate key by aurthentication
+
+ssh-keygen -t rsa -b 4094 -C "sahilksolkar20@gmail.com"
+//the generated key should be saved to the ssh keys in github profile settings
+
+
+// actually pushing to the origin
+git push -u origin master
+
+
+
+// branching and merging
+-------------------------------------------------------------------------------------------
+docker 
+
+docker images // lists all the images
+
+docker info // gives info about the dockcer
+
+alpine // linux os image
+
+docker pull alpine // import alpine image
+
+docker run alpine sh  // isse run hoti image lekin direct exit hoti
+docker ps -a // checks weather container is runing or not
+
+docker run -d -it alpine sh // isse container create hota aur chalu rehte jabtak destroy nay hota tabh tak
+
+docker run -it alpine sh // to enter into the alpine version ie into the linux terminal
+
+docker run -it --name=myLinux alpine sh //to change the name of the container
+
+docker stop (conatiner_name) eg docker stop myLinux // to stop the container
+
+docker rm myLinux // to remove the container
+
+docker rmi -f alpine // to remove the image
